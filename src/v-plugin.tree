@@ -15,6 +15,7 @@
             <toc-element topic="Code-reference-info.md"/>
             <toc-element topic="Code-style-and-formattings.md"/>
             <toc-element topic="Code-generation.md"/>
+            <toc-element topic="Minor-editor-features.md"/>
         </toc-element>
         <toc-element topic="Module-configuration-file-v-mod.md"/>
     </toc-element>
