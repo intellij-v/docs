@@ -88,7 +88,7 @@ To run a selected target, do one of the following:
   
    ![](run-gutter.png){width=700 border-effect="line"}
 
-- Press <kbd>Ctrl/Command + Shift + R<kbd>
+- Press <kbd>Ctrl/Command + Shift + R</kbd>
 
 ## Debug
 
