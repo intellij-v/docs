@@ -8,11 +8,11 @@ accessed via shortcuts and on mouse hover.
 
 IntelliJ V shows hints for function parameters and types in the editor inlined with your code.
 
-![](code-reference-info/inlay-hints.png){width=700 border-effect="line"}
+![](inlay-hints.png){width=700 border-effect="line"}
 
 You can configure inlay hints in **Settings / Preferences | Editor | Inlay Hints | V**.
 
-![](code-reference-info/hints-settings.png){width=700 border-effect="line"}
+![](hints-settings.png){width=700 border-effect="line"}
 
 > At the moment, the tooltip enable/disable setting is not flexible and turns off all tooltips at once. In the future,
 > it is planned to add the ability to configure separately for each type of hints.
@@ -32,18 +32,27 @@ You can configure inlay hints in **Settings / Preferences | Editor | Inlay Hints
 In addition to type hints, you can get type information for an element or expression by pressing <kbd>
 Ctrl+Shift+P</kbd>:
 
-![](code-reference-info/type-info.png){width=700 border-effect="line"}
+![](type-info.png){width=700 border-effect="line"}
+
+## Parameter info
+
+  The **Parameter Info** popup shows the names of parameters in method and function calls.
+  IntelliJ V automatically shows a popup with all available method signatures within 1 second (1000 milliseconds) after you type an opening bracket in the editor, or select a method from the suggestions list.
+  You can explicitly invoke the popup if it has closed or if your IDE is configured not to show the popup automatically.
+  To do so, press <kbd>Ctrl + P</kbd> (or click **View | Parameter Info**).
+
+  ![](parameter-info.png){width=700 border-effect="line"}
 
 ## Quick documentation
 
 With the **Quick Documentation** popup, you can view documentation for any code element (including library functions)
 right in the editor: just hover over the element or place the caret on it and press <kbd>Ctrl+Q</kbd>.
 
-![](code-reference-info/quick-documentation.png){width=700 border-effect="line"}
+![](quick-documentation.png){width=700 border-effect="line"}
 
 ## Quick definition
 
 To view the implementation or declaration of an element at caret without leaving the current file, call the **Quick
 Definition** popup by pressing <kbd>Ctrl+Shift+I</kbd>:
 
-![](code-reference-info/quick-definition.png){width=700 border-effect="line"}
+![](quick-definition.png){width=700 border-effect="line"}

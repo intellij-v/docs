@@ -10,7 +10,8 @@ The plugin provides a wide opportunity for code folding. You can fold most const
 
 ## Code commenting
 
-Using the shortcut <kbd>Ctrl + /</kbd> you can comment out the current line or selection with inline comments. Shortcut <kbd>Ctrl + Shift + /</kbd> will comment out the selected fragment with block comment.
+Using the shortcut <kbd>Ctrl + /</kbd> you can comment out the current line or selection with inline comments.
+Shortcut <kbd>Ctrl + Shift + /</kbd> will comment out the selected fragment with block comment.
 
 ![](comment-line.png){width=700 border-effect="line"}
 
@@ -28,6 +29,22 @@ The plugin supports spell checking in string literals and identifiers.
 
 ## Exit points
 
-The plugin highlights all function exit points (`panic` and `exit` calls as well) when you position the caret at one of them or on the function name.
+The plugin highlights all function exit points
+(`panic` and `exit` calls as well) when you position the caret at one of them or on the function name.
 
 ![](exit-points.png){width=700 border-effect="line"}
+
+## Declaration up/down mover
+
+The plugin provides a convenient way to re-arrange the functions of structs, etc.
+
+Press <kbd>Ctrl + Shift + Up/Down</kbd> to move the declaration up or down.
+
+You can also move single line of code with <kbd>Alt + Shift + Up/Down</kbd>.
+
+## Line marker for recursive calls
+
+The plugin highlights all recursive calls with a special gutter icon:
+
+![](recursive-call.png){width=700 border-effect="line"}
+
