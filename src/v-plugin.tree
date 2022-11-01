@@ -16,7 +16,9 @@
             <toc-element topic="Code-analysis.md"/>
             <toc-element topic="Code-generation.md"/>
             <toc-element topic="Navigation-and-search.md"/>
+            <toc-element topic="Refactorings.md"/>
             <toc-element topic="Minor-editor-features.md"/>
+            <toc-element topic="Language-injections.md"/>
         </toc-element>
         <toc-element topic="Module-configuration-file-v-mod.md"/>
     </toc-element>
