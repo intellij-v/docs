@@ -11,9 +11,9 @@
     <toc-element topic="Language-support.md">
         <toc-element topic="Basic-editor-features.md">
             <toc-element topic="Syntax-highlighting.md"/>
-            <toc-element topic="Foldings.md"/>
             <toc-element topic="Code-reference-info.md"/>
             <toc-element topic="Code-style-and-formattings.md"/>
+            <toc-element topic="Code-analysis.md"/>
             <toc-element topic="Code-generation.md"/>
             <toc-element topic="Minor-editor-features.md"/>
         </toc-element>

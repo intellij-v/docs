@@ -4,7 +4,7 @@ Your IDE with IntelliJ V provides multiple ways to generate V code constructs an
 
 ## Intentions and quick-fixes
 
-When the IDEA with IntelliJ Rust finds a way to fix, improve, or optimize your code, it displays either a yellow bulb icon ![][intention-bulb] (intention suggested) or a red bulb with an exclamation mark ![][quick-fix-bulb] (quick-fix suggested) in the editor next to the corresponding line.
+When the IDEA with IntelliJ V finds a way to fix, improve, or optimize your code, it displays either a yellow bulb icon ![][intention-bulb] (intention suggested) or a red bulb with an exclamation mark ![][quick-fix-bulb] (quick-fix suggested) in the editor next to the corresponding line.
 
 Click the bulb icon or press <kbd>Alt+Enter</kbd> to view the available intentions:
 
