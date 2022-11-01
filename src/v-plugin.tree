@@ -13,6 +13,7 @@
             <toc-element topic="Syntax-highlighting.md"/>
             <toc-element topic="Code-reference-info.md"/>
             <toc-element topic="Code-style-and-formattings.md"/>
+            <toc-element topic="Code-completion.md"/>
             <toc-element topic="Code-analysis.md"/>
             <toc-element topic="Code-generation.md"/>
             <toc-element topic="Minor-editor-features.md"/>
