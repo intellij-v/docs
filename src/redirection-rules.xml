@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE rules SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/redirection-rules.dtd">
 <rules>
-  <rule id="5b22d71f">
-    <description>Created after removal of "About Sample Product" from Sample Product</description>
-    <accepts>About Sample Product.html</accepts>
-  </rule>
-  <rule id="51538c78">
-    <description>Created after removal of "Ref" from Sample Product</description>
-    <accepts>Ref.html</accepts>
-  </rule>
 </rules>

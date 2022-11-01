@@ -1,4 +1,4 @@
-[//]: # (title: Running)
+[//]: # (title: Building)
 
 Use one the following options to run project:
 

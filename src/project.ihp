@@ -7,5 +7,5 @@
     <images dir="images" version="1.0"/>
     <vars src="v.list"/>
 
-    <instance src="v-plugin.tree" version="0.0.1-alpha" web-path="https://i582.github.io/intelliJ-V-docs/"/>
+    <instance src="v-plugin.tree" version="0.0.1-alpha"/>
 </ihp>

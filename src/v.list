@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vars SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/vars.dtd">
 <vars>
-    <var name="sample"
-         value="Sometext"
-         type="string"/>
 </vars>
