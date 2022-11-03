@@ -37,7 +37,7 @@ Postfix completion helps you reduce backward caret jumps as you type. You can tr
 
 For example, type `.var` after an expression (or select it from the completion suggestions list) to insert variable creation:
 
-![](var-template-example.png){width=500 border-effect="line"}
+![](var-template-example.png){width=400 border-effect="line"}
 
 You can check and adjust the list of postfix templates in **Settings / Preferences | Editor | General | Postfix Completion | V**:
 

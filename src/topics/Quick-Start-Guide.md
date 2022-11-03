@@ -20,7 +20,7 @@ Not yet available. See next section.
    ![](quick-start-guide/plugin-repositories.png){width=700 border-effect="line"}
 3. In the **Custom Plugin Repositories** dialog, click ![][add] and specify the following repository URL:
     ```
-    https://plugins.jetbrains.com/plugins/nightly/8182
+    https://plugins.jetbrains.com/plugins/nightly/20287
     ```
    ![](custom-plugin-repositories.png){width=700 border-effect="line"}
 4. Click **OK** in the **Custom Plugin Repositories** dialog.

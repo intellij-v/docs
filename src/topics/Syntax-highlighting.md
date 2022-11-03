@@ -5,7 +5,7 @@ The plugin provides basic syntax highlighting for V based on keywords, along wit
 Also, the plugin provides the following code highlighting enhancements:
 
 - Inferred types for local variables:
-    ![](syntax-highlighting/local-variable-hints.png){border-effect="line"}
+    ![](syntax-highlighting/local-variable-hints.png){width=600 border-effect="line"}
 - Highlighting mutable variables:
     ![](syntax-highlighting/mutable-variables.png){border-effect="line"}
 - Parameter names for function calls:
@@ -13,7 +13,7 @@ Also, the plugin provides the following code highlighting enhancements:
 - Captured variables in lambda functions:
     ![](syntax-highlighting/captured-variables.png){border-effect="line"}
 - Hints for range expressions:
-    ![](syntax-highlighting/range-hints.png){border-effect="line"}
+    ![](syntax-highlighting/range-hints.png){width=550 border-effect="line"}
 
 ## Customize the highlighting palette
 
