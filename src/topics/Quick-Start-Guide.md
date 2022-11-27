@@ -33,31 +33,34 @@ With the plugin's project wizard, you can quickly create new V project.
 
 1. Go to **File | New | Project** (**File | New Project**) or click **New project** on the welcome screen.
 2. Select **V** from the list in the left-hand pane.
-3. Specify the project name, location, and toolchain parameters:
+3. Specify the toolchain:
    ![](new-project.png){width=700 border-effect="line"}
-4. Click **Create** when ready, and the IDE will generate a ready-to-go stub project for you:
+4. Click **Next**.
+5. Specify the project name and location:
+   ![](new-project-2.png){width=700 border-effect="line"}
+6. Click **Create** when ready, and the IDE will generate a ready-to-go stub project for you:
    ![](new-project-created.png){width=700 border-effect="line"}
 
 ## Open existing project
 
 1. Go to **File | Open**) or click **Open** on the welcome screen.
 2. Select the root directory of the project and click **OK**.
-3. When you open an existing project, a notification will be shown that the toolchain is not configured:
+3. When you open an existing project, plugin automatically detects the toolchain and sets it up for you.
+4. If plugin can't detect the toolchain, a notification will be shown:
+   
+    ![](toolchain-not-configured.png){width=700 border-effect="line"}
 
-   ![](toolchain-not-configured.png){width=700 border-effect="line"}
-
-4. To set up the toolchain, click **Setup V toolchain**.
+5. To set up the toolchain, click **Setup V toolchain**.
 
    This will open the settings dialog:
 
    ![](project-settings.png){width=700 border-effect="line"}
 
-   If V was added to the **PATH** with the `v symlink` command, then the plugin will automatically set
-  all the necessary paths.
+   To add new toolchain, click ![add] and specify the path to V executable:
 
-   If the plugin could not find paths to the toolchain, select them manually.
-
-5. Click **Apply** to finish setup and wait until the IDE finishes indexing the standard library.
+   ![](new-toolchain.png){width=700 border-effect="line"}
+6. Click **Add** to add the toolchain.
+7. Click **OK** to finish setup and wait until the IDE finishes indexing the standard library.
 
 ## Clone a repository
 
@@ -67,7 +70,8 @@ With the plugin's project wizard, you can quickly create new V project.
 2. Provide the repository URL and specify the destination directory, then click **Clone**:
 
    ![](clone-repository.png){width=700 border-effect="line"}
-3. After the project opens, follow steps 4-6 from **Open existing project**.
+
+3. After the project opens, follow steps 3-6 from **Open existing project** if needed.
 
 
 ## Project settings
@@ -86,7 +90,7 @@ To run a selected target, do one of the following:
 
 - Select **Run** from the gutter menu next to the program entry point:
   
-   ![](run-gutter.png){width=700 border-effect="line"}
+   ![](run-gutter-icon.png){width=700 border-effect="line"}
 
 - Press <kbd>Ctrl/Command + Shift + R</kbd>
 

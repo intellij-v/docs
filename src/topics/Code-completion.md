@@ -9,3 +9,7 @@ Completion works for many places, so for example when you import a module, the I
 IntelliJ V takes care of the out-of-scope items when performing completion. This is useful for the cases like adding a module import during a function completion – the corresponding import item is inserted automatically:
 
 ![](completion.png){width=700 border-effect="line"}
+
+The plugin also provides completion for paths in string literals:
+
+![](path-completion.png){width=700 border-effect="line"}
