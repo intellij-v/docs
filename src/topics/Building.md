@@ -4,7 +4,7 @@ Use one the following options to run project:
 
 - Click the gutter icon next to the **main** function:
 
-  ![](run-gutter.png){width=700 border-effect="line"}
+  ![](run-gutter-icon.png){width=700 border-effect="line"}
 
 - Use the context menu in Project view (for a module or the whole project):
 
