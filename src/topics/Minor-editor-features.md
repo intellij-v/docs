@@ -15,11 +15,14 @@ Shortcut <kbd>Ctrl + Shift + /</kbd> will comment out the selected fragment with
 
 ![](comment-line.png){width=700 border-effect="line"}
 
-## Code vision for VCS
+## Code vision
 
-Above functions, structures, interfaces, and so on, you can see information about those who edited the code.
+Code Vision gathers various metrics for functions, structs, and so on and displays this information above 
+or after their declarations.
+For example, for structures, it will show how many interfaces it implements and by clicking you can quickly go to them.
+For interfaces, on the contrary, it will show how many structures implements it.
 
-![](code-vision-vcs.png){width=700 border-effect="line"}
+![](code-vision.png){width=700 border-effect="line"}
 
 ## Spellchecking
 
@@ -46,5 +49,5 @@ You can also move single line of code with <kbd>Alt + Shift + Up/Down</kbd>.
 
 The plugin highlights all recursive calls with a special gutter icon:
 
-![](recursive-call.png){width=700 border-effect="line"}
+![](recursive-call.png){width=500 border-effect="line"}
 

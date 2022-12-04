@@ -56,7 +56,7 @@ There are several Go To actions you can use to quickly navigate through your cod
 
   ![](interface-implementations.png){width=700 border-effect="line"}
 
-- **Go to Super Method** (Disabled for now) - navigates from an members of interface or interface implementation to
+- **Go to Super Method** - navigates from an members of interface or interface implementation to
   interface themselves.
 
 ## File structure
