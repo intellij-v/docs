@@ -6,7 +6,7 @@
                   name="IntelliJ V"
                   start-page="Introduction.md">
     <toc-element topic="Introduction.md"/>
-    <toc-element topic="Quick-Start-Guide.md"/>
+    <toc-element topic="Quick-Start-Guide.topic"/>
     <toc-element toc-title="Language Support">
         <toc-element toc-title="Basic editor features">
             <toc-element topic="Syntax-highlighting.md"/>

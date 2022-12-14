@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       id="Quick-Start-Guide" title="Quick Start Guide">
+
+    <p>
+        Below you can find general instructions on how to install the plugin and work with V projects in IntelliJ
+        IDEA, CLion, and other IntelliJ-based IDEs. Menu paths and dialog appearance may slightly vary depending on a
+        particular IDE.
+    </p>
+
+    <p>
+        If this is your first time using the JetBrains IDE, then read the
+        <a href="https://www.jetbrains.com/help/idea/getting-started.html">official documentation</a>
+        .
+    </p>
+
+    <chapter title="Prepare the environment" id="prepare-the-environment">
+        <list>
+            <li>
+                Install V from
+                <a href="https://github.com/vlang/v#installing-v---from-source-preferred-method">source</a>
+                or other <a href="https://vlang.io">installation options</a>.
+            </li>
+        </list>
+        <tip>
+            <p>
+                Make sure you run <code>sudo v symlink</code> (<code>.\v.exe symlink</code> on Windows) command after
+                installing V. This will help the plugin determine the paths to V.
+            </p>
+        </tip>
+    </chapter>
+
+    <chapter title="Enable the new UI" id="enable-the-new-ui">
+        <a href="https://www.jetbrains.com/help/idea/new-ui.html">New UI</a>
+        came to IntelliJ IDEA in 2022.3. It is not enabled by default, so you need to turn it on.
+
+        <procedure>
+            <step>
+                Go to
+                <ui-path>Settings | Appearance &amp; Behavior | New UI</ui-path>
+                .
+            </step>
+            <step>
+                Select the
+                <ui-path>Enable new UI</ui-path>
+                checkbox and apply the changes. Restart the IDE.
+            </step>
+        </procedure>
+
+        <tip>
+            All screenshot in this guide are made with new UI, so if you have old UI, you will see some
+            differences.
+        </tip>
+
+        <chapter title="Compare New and Old" collapsible="true" id="compare-new-and-old">
+            <tabs>
+                <tab title="New UI">
+                    <img src="new-ui.png" alt="Enable new UI" width="700"/>
+                </tab>
+                <tab title="Old UI">
+                    <img src="old-ui.png" alt="Enable new UI" width="700"/>
+                </tab>
+            </tabs>
+        </chapter>
+    </chapter>
+
+    <chapter title="Install / update the plugin" id="install-update-the-plugin">
+        <procedure title="Stable build" id="stable-build">
+            <step>Not yet available.</step>
+        </procedure>
+
+        <procedure title="Nightly build" id="nightly-build" style="steps">
+            <step>
+                Go to
+                <control>Settings / Preferences | Plugins</control>
+                in your IDE.
+            </step>
+            <step>
+                <p>
+                    Click <img src="app.general.gearPlain.svg" alt="gear"/> and then click
+                    <control>Manage Plugin Repositories</control>
+                    .
+                </p>
+
+                <img src="quick-start-guide/plugin-repositories.png" alt="repos" width="700" border-effect="line"/>
+            </step>
+            <step>
+                <p>
+                    In the
+                    <control>Custom Plugin Repositories</control>
+                    dialog, click <img src="app.general.add.svg" alt="add"/> and specify the following repository URL:
+                </p>
+
+                <code-block>
+                    https://plugins.jetbrains.com/plugins/nightly/20287
+                </code-block>
+
+                <img src="custom-plugin-repositories.png" alt="custom repos" width="700" border-effect="line"/>
+            </step>
+            <step>
+                Click
+                <control>OK</control>
+                in the
+                <control>Custom Plugin Repositories</control>
+                dialog.
+            </step>
+            <step>
+                Switch to
+                <control>Marketplace</control>
+                , and search for
+                <emphasis>Vlang</emphasis>
+                .
+            </step>
+            <step>
+                Click
+                <control>Install</control>
+                and restart the IDE.
+            </step>
+        </procedure>
+    </chapter>
+
+    <chapter title="Create new project" id="create-new-project">
+        <p>With the plugin's project wizard, you can quickly create new V project.</p>
+        <procedure>
+            <step>Go to
+                <ui-path>File | New | Project</ui-path>
+                (
+                <ui-path>File | New Project</ui-path>
+                ) or click
+                <control>New project</control>
+                on the welcome screen.
+            </step>
+            <step>
+                Select
+                <control>V</control>
+                from the list in the left-hand pane.
+            </step>
+            <step>
+                Specify the toolchain:
+                <img src="new-project.png" alt="new project" width="700" border-effect="line"/>
+            </step>
+            <step>
+                Click
+                <control>Next</control>
+                .
+            </step>
+            <step>
+                Specify the project name and location:
+                <img src="new-project-2.png" alt="new project 2" width="700" border-effect="line"/>
+            </step>
+            <step>
+                Click
+                <control>Create</control>
+                when ready, and the IDE will generate a ready-to-go stub project for you:
+                <img src="new-project-created.png" alt="new project created" width="700" border-effect="line"/>
+            </step>
+        </procedure>
+    </chapter>
+
+    <chapter title="Open existing project" id="open-existing-project">
+        <procedure>
+            <step>
+                <p>
+                    Go to
+                    <ui-path>File | Open</ui-path>
+                    or click
+                    <control>Open</control>
+                    on the welcome screen.
+                </p>
+            </step>
+            <step>
+                <p>
+                    Select the root directory of the project and click
+                    <control>OK</control>
+                    .
+                </p>
+            </step>
+            <step>
+                <p>
+                    When you open an existing project, plugin automatically detects the toolchain and sets it up for
+                    you.
+                </p>
+            </step>
+            <step>
+                <p>If plugin can't detect the toolchain, a notification will be shown:</p>
+                <img src="toolchain-not-configured.png" alt="toolchain not configured" width="700"
+                     border-effect="line"/></step>
+            <step>
+                <p>
+                    To set up the toolchain, click
+                    <control>Setup V toolchain</control>
+                    .
+                </p>
+                <p>This will open the settings dialog:</p>
+                <img src="project-settings.png" alt="project settings" width="700" border-effect="line"/>
+                <p>
+                    To add new toolchain, click <img src="app.general.add.svg" alt="add"/> and specify the path to V
+                    executable:
+                </p>
+                <img src="new-toolchain.png" alt="new toolchain" width="700" border-effect="line"/>
+            </step>
+            <step>
+                <p>
+                    Click
+                    <control>Add</control>
+                    to add the toolchain.
+                </p>
+            </step>
+            <step>
+                <p>
+                    Click
+                    <control>OK</control>
+                    to finish setup and wait until the IDE finishes indexing the standard library.
+                </p>
+            </step>
+        </procedure>
+    </chapter>
+
+    <chapter title="Clone a repository" id="clone-a-repository">
+        <procedure>
+            <step>
+                <p>
+                    Go to
+                    <ui-path>VCS | Get from Version Control</ui-path>
+                    or click
+                    <control>Get from VCS</control>
+                    on the welcome screen.
+                </p>
+                <p>
+                    If there's already a Git project opened, select
+                    <control>Git | Clone</control>
+                    from the main menu.
+                </p>
+            </step>
+            <step>
+                <p>
+                    Provide the repository URL and specify the destination directory, then click
+                    <control>Clone</control>
+                    :
+                </p>
+                <img src="clone-repository.png" alt="clone repo" width="700" border-effect="line"/>
+            </step>
+            <step>
+                <p>
+                    After the project opens, follow steps 3-6 from
+                    <control>Open existing project</control>
+                    if needed.
+                </p>
+            </step>
+        </procedure>
+    </chapter>
+
+    <chapter title="Project settings" id="project-settings">
+        <p>For general project settings, navigate to
+            <control>Settings / Preferences | Languages &amp; Frameworks | V</control>
+            :
+        </p>
+        <img src="project-settings/project-settings.png" alt="project settings" width="700" border-effect="line"/>
+        <p>Use the
+            <control>Vfmt</control>
+            node to adjust the Vfmt formatter settings:
+        </p>
+        <img src="project-settings/vfmt-settings.png" alt="vfmt settings" width="700" border-effect="line"/>
+    </chapter>
+    <chapter title="Run" id="run">
+        <p>To run a selected target, do one of the following:</p>
+        <list>
+            <li>
+                <p>Select
+                    <control>Run</control>
+                    from the gutter menu next to the program entry point:
+                </p>
+                <img src="run-gutter-icon.png" alt="gutter icon run" width="700" border-effect="line"/></li>
+            <li>
+                <p>Press
+                    <shortcut>Ctrl/Cmd + Shift + R</shortcut>
+                </p>
+            </li>
+        </list>
+    </chapter>
+    <chapter title="Debug" id="debug">
+        <p>No available for now. Work in progress.</p>
+    </chapter>
+
+</topic>
