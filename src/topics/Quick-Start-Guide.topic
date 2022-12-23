@@ -286,7 +286,19 @@
                     <shortcut>Ctrl/Cmd + Shift + R</shortcut>
                 </p>
             </li>
+            <li>
+                <p>Use the context menu in file:</p>
+                <img src="run-context-menu.png" alt="run context menu" width="700" border-effect="line"/></li>
+            <li>
+                <p>In IntelliJ IDEA, you can also run the current file through predefined
+                    <control>Current File</control>
+                    run configuration:
+                </p>
+                <img src="predefined-run-current-file.png" alt="predefined run current file" width="700"
+                     border-effect="line"/></li>
         </list>
+
+
     </chapter>
     <chapter title="Debug" id="debug">
         <p>
@@ -331,12 +343,13 @@
             Debugger data views can be configured in
             <ui-path>Settings/Preferences | Languages &amp; Frameworks | V | Debugger</ui-path>
             ,
-            see Debugging for details.
+            see
+            <a href="Debugging.md">Debugging</a>
+            for details.
         </p>
 
         <img src="debugger-settings.png" alt="debug settings" width="700" border-effect="line"/>
 
-        <p>See <a href="Debugging.md">Debugging</a> for more information.</p>
     </chapter>
 
 </topic>
