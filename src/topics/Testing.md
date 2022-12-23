@@ -13,4 +13,4 @@ Use one the following options to start tests:
   name, respectively.
 - Use the context menu in Project view (for a module or the whole project):
 
-  ![](run-context-menu.png){width=700 border-effect="line"}
+  ![](run-context-menu-in-project-view.png){width=700 border-effect="line"}
