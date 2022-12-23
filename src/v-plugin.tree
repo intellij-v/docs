@@ -24,5 +24,6 @@
     </toc-element>
     <toc-element topic="Building.md"/>
     <toc-element topic="Testing.md"/>
+    <toc-element topic="Debugging.md"/>
     <toc-element topic="Project-Settings.md"/>
 </instance-profile>

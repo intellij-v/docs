@@ -10,11 +10,11 @@
         particular IDE.
     </p>
 
-    <p>
+    <note>
         If this is your first time using the JetBrains IDE, then read the
         <a href="https://www.jetbrains.com/help/idea/getting-started.html">official documentation</a>
         .
-    </p>
+    </note>
 
     <chapter title="Prepare the environment" id="prepare-the-environment">
         <list>
@@ -49,12 +49,12 @@
             </step>
         </procedure>
 
-        <tip>
+        <note>
             All screenshot in this guide are made with new UI, so if you have old UI, you will see some
             differences.
-        </tip>
+        </note>
 
-        <chapter title="Compare New and Old" collapsible="true" id="compare-new-and-old">
+        <chapter title="Compare New and Old UI" collapsible="true" id="compare-new-and-old">
             <tabs>
                 <tab title="New UI">
                     <img src="new-ui.png" alt="Enable new UI" width="700"/>
@@ -257,12 +257,20 @@
             <control>Settings / Preferences | Languages &amp; Frameworks | V</control>
             :
         </p>
+
         <img src="project-settings/project-settings.png" alt="project settings" width="700" border-effect="line"/>
+
         <p>Use the
             <control>Vfmt</control>
             node to adjust the Vfmt formatter settings:
         </p>
         <img src="project-settings/vfmt-settings.png" alt="vfmt settings" width="700" border-effect="line"/>
+
+        <p>Use the
+            <control>Debugger</control>
+            node to adjust the debugger settings:
+        </p>
+        <img src="project-settings/debugger-settings.png" alt="vfmt settings" width="700" border-effect="line"/>
     </chapter>
     <chapter title="Run" id="run">
         <p>To run a selected target, do one of the following:</p>
@@ -281,7 +289,54 @@
         </list>
     </chapter>
     <chapter title="Debug" id="debug">
-        <p>No available for now. Work in progress.</p>
+        <p>
+            Debug for your V code is available in
+            <a href="https://www.jetbrains.com/clion">CLion</a>,
+            <a href="https://www.jetbrains.com/idea">IntelliJ IDEA Ultimate</a>,
+            <a href="https://www.jetbrains.com/pycharm-pro">PyCharm Professional</a>,
+            <a href="https://www.jetbrains.com/go">GoLand</a>,
+            and
+            <a href="https://www.jetbrains.com/rider">Rider</a>
+            (starting from version 2022.1).
+
+            Find a summary of differences here.
+        </p>
+        <p>
+            The quickest way to start debugging is to use the gutter menu of the program entry point:
+        </p>
+
+        <img src="debug-gutter.png" alt="debug gutter" width="700" border-effect="line"/>
+
+        <p>
+            Alternatively, select a desired configuration and call
+            <ui-path>Run | Debug</ui-path>
+            (
+            <shortcut>Shift+F9</shortcut>
+            ) or click
+            <img src="app.actions.startDebugger.png" alt="start debugger"/>
+            on the main toolbar:
+        </p>
+
+        <img src="debug-top.png" alt="debug top" width="700" border-effect="line"/>
+
+        <p>
+            All the IDE's debug features (breakpoints, variable monitoring,
+            stepping, memory and disassembly view, and others) are available
+            for your V code:
+        </p>
+
+        <img src="debug-all.png" alt="debug all" width="700" border-effect="line"/>
+
+        <p>
+            Debugger data views can be configured in
+            <ui-path>Settings/Preferences | Languages &amp; Frameworks | V | Debugger</ui-path>
+            ,
+            see Debugging for details.
+        </p>
+
+        <img src="debugger-settings.png" alt="debug settings" width="700" border-effect="line"/>
+
+        <p>See <a href="Debugging.md">Debugging</a> for more information.</p>
     </chapter>
 
 </topic>
