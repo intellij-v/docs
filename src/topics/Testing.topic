@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       title="Testing" id="Testing" help-id="Testing-2">
+
+    <procedure title="Run tests" style="choices">
+        <p>Use one the following options to start tests:</p>
+        <step>Click the gutter icon next to the test entry:
+            <img src="run_tests_gutter.png" width="508" alt="Gutter menu for tests" border-effect="line"/>
+        </step>
+        <step>Use the context menu in Project view (for a module or the whole project):
+            <img src="run_tests_project_view.png" width="400" border-effect="line"
+                 alt="Starting tests from the Project view"/>
+        </step>
+    </procedure>
+
+    <chapter title="Test runner view" id="test-runner-view">
+        <p>When you launch tests, IntelliJ V employs the IDE's built-in test runner to help you monitor the process and
+            explore the results:
+        </p>
+        <img src="testing_results.png" width="750" alt="Test runner window" border-effect="line"/>
+
+        <chapter title="Test statuses" collapsible="true" id="test-statuses">
+            <p>Next to each test on the
+                <control>Test Runner</control>
+                tab, the IDE displays an icon that marks the test status:
+            </p>
+
+            <table>
+                <tr>
+                    <td width="10%">Icon</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="app.runConfigurations.toolbarError.svg" alt="Test error"/>
+                    </td>
+                    <td>Test error. This status is assigned to tests that caused an exception from the tested source
+                        code.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="app.runConfigurations.toolbarFailed.svg" alt="Test failed"/>
+                    </td>
+                    <td>Test failed.
+                        If at least one child test fails, all its parent tests are marked as failed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="app.process.step_1.svg" alt="Test in progress"/>
+                    </td>
+                    <td>Test in progress.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="app.runConfigurations.toolbarPassed.svg" alt="Test passed"/>
+                    </td>
+                    <td>Test passed successfully.</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="app.runConfigurations.toolbarTerminated.svg" alt="Terminated"/>
+                    </td>
+                    <td><p>Test terminated. This status is assigned to tests that were stopped.</p>
+                        <p>If at least one test receives this status, then all
+                            unfinished tests and their parent tests are marked as terminated.</p></td>
+                </tr>
+            </table>
+        </chapter>
+
+        <p> From this window, you can rerun, pause, and terminate tests. To modify the test configuration, click
+            <img src="app.general.settings.svg" alt="Default Alt"/>
+            on the test runner toolbar and adjust the settings in the dialog.
+        </p>
+
+        <p>In addition to the common running actions, the test runner allows:</p>
+
+        <list>
+            <li>
+                Navigate through the list of test cases using arrow keys.
+            </li>
+            <li>
+                Navigate between failed tests using the
+                <img src="app.actions.nextOccurence.svg" alt="Next Failed Test"/>
+                and
+                <img src="app.actions.previousOccurence.svg" alt="Previous Failed Test"/>
+                buttons
+                or
+                <shortcut>Ctrl+Alt+Up</shortcut>
+                or
+                <shortcut>Ctrl+Alt+Down</shortcut>
+                keyboard shortcuts.
+            </li>
+            <li>
+                View the total number of tests being run in the current session.
+            </li>
+            <li>
+                Automatically restart tests in the current run configuration right after you change the source
+                code by enabling the
+                <img src="app.actions.swapPanels.svg" alt="Toggle Auto-test"/>
+                <control>Toggle auto-test</control>
+                option.
+            </li>
+            <li>
+                Sort tests alphabetically
+                <img src="app.objectBrowser.sorted.svg" alt="Sort Alphabetically"/>
+                and by duration
+                <img src="app.runConfigurations.sortbyDuration.svg" alt="Sort by Duration"/>
+                .
+            </li>
+            <li>
+                Show or hide information about the passed tests by clicking
+                <img src="app.runConfigurations.showPassed.svg" alt="the Show Passed button"/>
+                .
+            </li>
+            <li>
+                Show the ignored tests in the tree view of all tests within the current
+                run/debug configuration or test class by clicking
+                <img src="app.runConfigurations.showIgnored.svg" alt="the Show Ignored button"/>
+                .
+            </li>
+            <li>
+                <p>The
+                    <img src="app.general.gearPlain.svg" alt="Options"/>
+                    icon opens an additional menu that allows you to:
+                </p>
+                <list>
+                    <li>Monitor execution of the current test.</li>
+                    <li>Have the first failed test selected automatically upon completing the suit.</li>
+                    <li>Navigate to the stack trace.</li>
+                    <li>Enable automatic scrolling to the source code.</li>
+                    <li>Have the corresponding source code opened at exceptions.</li>
+                    <li>Show statistics inline.</li>
+                </list>
+
+            </li>
+
+
+        </list>
+
+    </chapter>
+
+    <chapter title="Test configuration" id="test-configuration">
+        <p>
+            You don't have to create a test configuration to run tests – the IDE will create one automatically whenever
+            you run tests using one of the methods listed above. The configuration will be saved for future use. To
+            modify the current configuration, click <img src="app.general.settings.svg" alt="Default Alt"/> on the Test
+            runner toolbar and make the adjustments in the dialog:
+        </p>
+
+        <img src="testing_settings.png" width="600" alt="Test configuration settings" border-effect="line"/>
+
+        <p>
+            You can also create a test configuration manually.
+        </p>
+    </chapter>
+
+    <chapter title="Failed assertions in editor" id="failed-assertions-in-editor">
+        <p>
+            When a test fails, IntelliJ V highlights the line of code that caused the failure. You can hover the
+            highlighted line to see the error message:
+        </p>
+
+        <img src="failed_assertion.png" width="550" alt="Failed assertion" border-effect="line"/>
+
+        <p>
+            Using quick-fix, you can rerun the test. To do this, click the light bulb icon and select the
+            <control>Run "V Test..."</control>
+            .
+        </p>
+    </chapter>
+
+</topic>
