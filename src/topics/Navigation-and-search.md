@@ -51,6 +51,9 @@ There are several Go To actions you can use to quickly navigate through your cod
 - **Declaration or Usages** (<kbd>Ctrl+B</kbd>) - jumps to the item's declaration or shows when a list usages when on a
   declaration.
 
+- **Type Declaration** (<kbd>Ctrl+Shift+B</kbd>) - navigates to the type declaration of a variable, field, or constant. 
+  When called for a method, jumps to the declaration of the receiver type.
+
 - **Definition (Implementation)** (<kbd>Ctrl+Alt+B</kbd>) - shows the list of implementations for interfaces. This
   action is also available via a gutter icon:
 

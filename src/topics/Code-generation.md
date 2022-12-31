@@ -14,10 +14,6 @@ You can find the full list of V intentions and adjust them if necessary in **Set
 
 ![](intentions-settings.png){width=700 border-effect="line"}
 
-See also full list of V inspections in **Settings / Preferences | Editor | Inspections | V**:
-
-![](inspections-settings.png){width=700 border-effect="line"}
-
 ## Live templates
 
 Use live templates to insert common constructs into your code, such as loops, conditions, various declarations, or print statements. You can explore and customize the list of live templates in **Settings / Preferences | Editor | Live Templates | V**:

@@ -1,6 +1,6 @@
 [//]: # (title: Refactorings)
 
-> Refactorings are now in a rudimentary state and will be improved during alpha testing.
+> Refactorings are now in a rudimentary state and will be improved during beta testing.
 > {type=note}
 
 IntelliJ V provides the following refactorings for your V code:

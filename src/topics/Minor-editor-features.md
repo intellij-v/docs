@@ -51,3 +51,9 @@ The plugin highlights all recursive calls with a special gutter icon:
 
 ![](recursive-call.png){width=500 border-effect="line"}
 
+## Breadcrumbs
+
+The plugin provides breadcrumbs for the current cursor location.
+It shows the structure back to the file root.
+
+![](breadcrumbs.png){width=700 border-effect="line"}
