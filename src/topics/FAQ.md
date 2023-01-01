@@ -2,7 +2,7 @@
 
 ### Which IDEs are compatible? Are there any differences?
 
-The plugin is compatible with all IntelliJ-based IDEs starting from the version 2022.3, with the following differences
+The plugin is compatible with all IntelliJ-based IDEs starting from the version 2022.3.1, with the following differences
 in the sets of the available features:
 
 |                  | Open-source and Educational IDEs<sup>*</sup> | [CLion] (commercial) | [IntelliJ IDEA] Ultimate, [PyCharm] Professional, [GoLand] (commercial) | [WebStorm], [PhpStorm], other commercial IDEs |
@@ -24,7 +24,7 @@ incremental analysis and indexing.
 ### Is debugging available?
 
 Yes, you can debug your V code in CLion, IntelliJ IDEA Ultimate, PyCharm Professional, GoLand, and Rider. See the
-section on Debugging for details.
+section on [Debugging](Debugging.md) for details.
 
 ### Any tips for migrating from Emacs, Vim, or VS Code?
 

@@ -33,6 +33,11 @@
     </chapter>
 
     <chapter title="Enable the new UI" id="enable-the-new-ui">
+        <note>
+            All screenshot in this guide are made with new UI, so if you have old UI, you will see some
+            differences.
+        </note>
+
         <a href="https://www.jetbrains.com/help/idea/new-ui.html">New UI</a>
         came to IntelliJ IDEA in 2022.3. It is not enabled by default, so you need to turn it on.
 
@@ -49,11 +54,6 @@
             </step>
         </procedure>
 
-        <note>
-            All screenshot in this guide are made with new UI, so if you have old UI, you will see some
-            differences.
-        </note>
-
         <chapter title="Compare New and Old UI" collapsible="true" id="compare-new-and-old">
             <tabs>
                 <tab title="New UI">
@@ -67,44 +67,11 @@
     </chapter>
 
     <chapter title="Install / update the plugin" id="install-update-the-plugin">
-        <procedure title="Stable build" id="stable-build">
-            <step>Not yet available.</step>
-        </procedure>
-
-        <procedure title="Nightly build" id="nightly-build" style="steps">
+        <procedure title="Stable build" id="stable-build" style="steps">
             <step>
                 Go to
                 <control>Settings / Preferences | Plugins</control>
                 in your IDE.
-            </step>
-            <step>
-                <p>
-                    Click <img src="app.general.gearPlain.svg" alt="gear"/> and then click
-                    <control>Manage Plugin Repositories</control>
-                    .
-                </p>
-
-                <img src="quick-start-guide/plugin-repositories.png" alt="repos" width="700" border-effect="line"/>
-            </step>
-            <step>
-                <p>
-                    In the
-                    <control>Custom Plugin Repositories</control>
-                    dialog, click <img src="app.general.add.svg" alt="add"/> and specify the following repository URL:
-                </p>
-
-                <code-block>
-                    https://plugins.jetbrains.com/plugins/nightly/20287
-                </code-block>
-
-                <img src="custom-plugin-repositories.png" alt="custom repos" width="700" border-effect="line"/>
-            </step>
-            <step>
-                Click
-                <control>OK</control>
-                in the
-                <control>Custom Plugin Repositories</control>
-                dialog.
             </step>
             <step>
                 Switch to
@@ -112,6 +79,8 @@
                 , and search for
                 <emphasis>Vlang</emphasis>
                 .
+
+                <img src="plugin.png" alt="plugin page" width="700" border-effect="line"/>
             </step>
             <step>
                 Click
@@ -119,6 +88,55 @@
                 and restart the IDE.
             </step>
         </procedure>
+
+        <!--        <procedure title="Nightly build" id="nightly-build" style="steps">-->
+        <!--            <step>-->
+        <!--                Go to-->
+        <!--                <control>Settings / Preferences | Plugins</control>-->
+        <!--                in your IDE.-->
+        <!--            </step>-->
+        <!--            <step>-->
+        <!--                <p>-->
+        <!--                    Click <img src="app.general.gearPlain.svg" alt="gear"/> and then click-->
+        <!--                    <control>Manage Plugin Repositories</control>-->
+        <!--                    .-->
+        <!--                </p>-->
+
+        <!--                <img src="quick-start-guide/plugin-repositories.png" alt="repos" width="700" border-effect="line"/>-->
+        <!--            </step>-->
+        <!--            <step>-->
+        <!--                <p>-->
+        <!--                    In the-->
+        <!--                    <control>Custom Plugin Repositories</control>-->
+        <!--                    dialog, click <img src="app.general.add.svg" alt="add"/> and specify the following repository URL:-->
+        <!--                </p>-->
+
+        <!--                <code-block>-->
+        <!--                    https://plugins.jetbrains.com/plugins/nightly/20287-->
+        <!--                </code-block>-->
+
+        <!--                <img src="custom-plugin-repositories.png" alt="custom repos" width="700" border-effect="line"/>-->
+        <!--            </step>-->
+        <!--            <step>-->
+        <!--                Click-->
+        <!--                <control>OK</control>-->
+        <!--                in the-->
+        <!--                <control>Custom Plugin Repositories</control>-->
+        <!--                dialog.-->
+        <!--            </step>-->
+        <!--            <step>-->
+        <!--                Switch to-->
+        <!--                <control>Marketplace</control>-->
+        <!--                , and search for-->
+        <!--                <emphasis>Vlang</emphasis>-->
+        <!--                .-->
+        <!--            </step>-->
+        <!--            <step>-->
+        <!--                Click-->
+        <!--                <control>Install</control>-->
+        <!--                and restart the IDE.-->
+        <!--            </step>-->
+        <!--        </procedure>-->
     </chapter>
 
     <chapter title="Create new project" id="create-new-project">
@@ -142,7 +160,24 @@
                 <img src="new-project.png" alt="new project" width="700" border-effect="line"/>
             </step>
             <step>
-                Click
+                <p>
+                    If plugin can't detect any toolchains, you need add new toolchain manually:
+                </p>
+                <p>
+                    To add new toolchain, click <img src="app.general.add.svg" alt="add"/> and specify the path to V
+                    executable:
+                </p>
+                <img src="new-toolchain.png" alt="new toolchain" width="700" border-effect="line"/>
+            </step>
+            <step>
+                <p>
+                    Click
+                    <control>Add</control>
+                    to add the toolchain.
+                </p>
+            </step>
+            <step>
+                When toolchain selected, click
                 <control>Next</control>
                 .
             </step>
@@ -311,8 +346,15 @@
             <a href="https://www.jetbrains.com/rider">Rider</a>
             (starting from version 2022.1).
 
-            Find a summary of differences here.
+            Find a summary of differences <a href="FAQ.md">here</a>.
         </p>
+
+        <note>
+            Note, if you want run debugger not in CLion, you need to install
+            <a href="https://plugins.jetbrains.com/plugin/12775-native-debugging-support">Native Debugging Support</a>
+            plugin.
+        </note>
+
         <p>
             The quickest way to start debugging is to use the gutter menu of the program entry point:
         </p>

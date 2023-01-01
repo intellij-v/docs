@@ -6,6 +6,10 @@ With IntelliJ V, you have static code analysis inside IDE with builtin inspectio
 
 Inspections detect and help to correct anomalous code before you compile it. This includes various problems like potential bugs, spelling problems, or overall code structure issues.
 
+> Note that not many inspections have been implemented at the moment due to lack of time, 
+> inspections will be added in the course of further development.
+> {type=note}
+
 By default, most of the V inspections work on-the-fly and provide quick-fixes to be applied right away. Find a few examples below:
 
 - Naming conventions:
