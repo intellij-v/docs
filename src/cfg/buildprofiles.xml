@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<buildprofiles xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <variables>
+        <config-search-scopes-provider>https://www.jetbrains.com/search/json/</config-search-scopes-provider>
+        <config-algolia-index>prod_VLANG_HELP</config-algolia-index>
+        <config-algolia-id>JWPLKSKZVF</config-algolia-id>
+        <config-algolia-api-key>bce9ba6ce7419efe813d671244d3bf6a</config-algolia-api-key>
+    </variables>
+</buildprofiles>
